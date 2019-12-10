@@ -1,0 +1,28 @@
+{
+  "name": "projeto",
+  "version": "1.0.0",
+  "description": "Projeto Final Meli + Reprograma",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soumayara/projeto-final-meli-reprograma.git"
+  },
+  "author": "soumayara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soumayara/projeto-final-meli-reprograma/issues"
+  },
+  "homepage": "https://github.com/soumayara/projeto-final-meli-reprograma#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.1"
+  },
+  "keywords": []
+}
