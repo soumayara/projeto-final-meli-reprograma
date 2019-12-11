@@ -1,8 +1,11 @@
 const express = require("express")
-const mongoose = express("mongoose")
+const mongoose = require("mongoose")
 const app = express()
 
-mongoose.connect("mongodb://localhost:27017/reprograma", { userNewUrlParser: true }); // linha de comandp
+mongoose.connect("mongodb://localhost:27017/reprograma", { 
+  useNewUrlParser: true,
+  useUnifiedTopology: true 
+}); // linha de comandp
 let db = mongoose.connection; //representação
 db.on("error", console.log.bind(console, "connection error"))//espera receber do console a conexão
 db.once("open", function (){
@@ -12,6 +15,7 @@ db.once("open", function (){
 
 //rotas
 const index = require("./routes/index")
+const beneficiado = require("./routes/beneficiadoRoute")
 
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*")
@@ -23,5 +27,5 @@ app.use(function(req, res, next) {
   })
 
   app.use("/", index)
-
+  app.use("/beneficiado", beneficiado)
   module.exports = app
