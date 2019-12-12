@@ -2,7 +2,7 @@ const express = require("express")
 const mongoose = require("mongoose")
 const app = express()
 
-mongoose.connect("mongodb://localhost:27017/reprograma", { 
+mongoose.connect("mongodb+srv://banco-dvs:dvs123@cluster0-9ilbh.mongodb.net/banco-beneficiado" , { 
   useNewUrlParser: true,
   useUnifiedTopology: true 
 }); // linha de comandp
