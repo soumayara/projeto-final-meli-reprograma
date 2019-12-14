@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const beneficiadoSchema = new mongoose.Schema({
+const beneficiadosSchema = new mongoose.Schema({
     nome: {type: String},
     CPF: {type: Number},
     DataNascimento: {type: String},
@@ -19,5 +19,5 @@ const beneficiadoSchema = new mongoose.Schema({
     }]
 })
 
-const beneficiado = mongoose.model('Beneficiado',beneficiadoSchema);
+const beneficiado = mongoose.model('Beneficiado',beneficiadosSchema);
 module.exports = beneficiado

@@ -16,6 +16,7 @@ db.once("open", function (){
 //rotas
 const index = require("./routes/index")
 const beneficiado = require("./routes/beneficiadoRoute")
+const bodyParser = require("body-parser")
 
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*")
@@ -26,6 +27,7 @@ app.use(function(req, res, next) {
     next()
   })
 
+  app.use(bodyParser.json())
   app.use("/", index)
   app.use("/beneficiado", beneficiado)
   module.exports = app
