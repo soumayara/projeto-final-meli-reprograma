@@ -2,22 +2,25 @@ const mongoose = require('mongoose');
 
 const beneficiadosSchema = new mongoose.Schema({
     nome: {type: String},
-    CPF: {type: Number},
-    DataNascimento: {type: String},
-    Sexo: {type: String},
-    Endereco: {type: String},
-    Estado: {type: String},
-    Telefone: {type: Number},
-    EstadoCivil: {type: String},
-    GrauDeficiencia: {type: String},
-    OrigemCausaDeficiencia: {type: String},
-    EscreveLeBraile: {type: String},
-    DataCadastramento: {type: String},
-    Recebidos: [{
+    email:{type: String},
+    cpf: {type: Number},
+    dataNascimento: {type: String},
+    sexo: {type: String},
+    endereco: {type: String},
+    estado: {type: String},
+    telefone: {type: Number},
+    estadoCivil: {type: String},
+    grauDeficiencia: {type: String},
+    origemCausaDeficiencia: {type: String},
+    escreveLeBraile: {type: String},
+    dataCadastramento: {type: String},
+    recebidos: [{
         titulo: String,
         data: String,
     }]
 })
+
+
 
 const beneficiado = mongoose.model('Beneficiado',beneficiadosSchema);
 module.exports = beneficiado
