@@ -4,7 +4,7 @@
 Essa aplicação permite gerenciar a distribuição dos livros recebidos pelos beneficiados do Projeto
 ‘A Bíblia para Deficientes Visuais”. Durante o anos são produzidas e distríbuidas Bíblias em Braile e em áudio
 onde algumas vezes por ano o beneficiado recebe um caderno referente a um livro da Bíblia na versão Braile. O objetivo da API
-é otimizar esse processo pra que as distribuições sejam feitas de forma contínua, e que organizada.
+é otimizar esse processo pra que as distribuições sejam feitas de forma contínua e organizada.
 
 <h3>Rotas/EndPoints</h3>
 
