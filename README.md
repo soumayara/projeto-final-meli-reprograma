@@ -8,7 +8,6 @@ onde algumas vezes por ano o beneficiado recebe um caderno referente a um livro 
 
 <h3>Rotas/EndPoints</h3>
 
-Área restrita - SBB Ação Social
 
 GET/beneficiado = listar todos os beneficiados cadastrados no Programa
 
@@ -17,6 +16,9 @@ GET/beneficiado/cpf/:cpf = lista de acordo com o CPF, os beneficiados cadastrado
 GET/beneficiado/nome/:nome = lista de acordo com o nome, os beneficiados cadastrados no Programa
 
 GET/beneficiado/:id = lista de acordo com o ID, os beneficiados cadastrados no Programa
+
+
+//<em><b>Área restrita - SBB Ação Social</em></b>
 
 
 POST/beneficiado = insere os dados de um novo beneficiado
