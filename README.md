@@ -31,12 +31,18 @@ PUT/livros/:_id = atualiza a lista de livros recebido pelo beneficiado, a partir
 
 DELETE/beneficiado/:cpf = rota que deleta um beneficiado | HTTP 200 NO CONTENT
 
-<h3>Tecnologias Utilizadas / Apoio</h3>
-• API REST |
-• NodeJS |
-• MongoDB |
-• Postman |
-• Heroku |
-• ApiDoc
+<h3>Linguagens Utilizadas</h3>
+• JavaScript |
+• NodeJS 
+
+<h3>Banco de Dados</h3>
+
+• MongoDB 
+
+<h3>Dependências</h3>
+• Express |
+• Nodemon |
+• Mongoose |
+• Body-parser |
 
 <h3> Conheça o projeto na íntegra: </h3> http://bit.ly/ABibliaEmBraile
