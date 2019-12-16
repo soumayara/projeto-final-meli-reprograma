@@ -23,12 +23,12 @@ GET/beneficiado/:id = lista de acordo com o ID, os beneficiados cadastrados no P
 
 POST/beneficiado = insere os dados de um novo beneficiado
 
-POST/:cpf = insere um novo livro recebido ao beneficiado puxando pelo cpf cadastrado
+POST//beneficiado/:cpf = insere um novo livro recebido ao beneficiado puxando pelo cpf cadastrado
 
 
-PUT/:_id = atualiza os dados de um beneficiado puxando pelo id criado
+PUT/beneficiado/:_id = atualiza os dados de um beneficiado puxando pelo id criado
 
-PUT/livros/:_id = atualiza a lista de livros recebido pelo beneficiado, a partir do id criado
+PUT/beneficiado/livros/:_id = atualiza a lista de livros recebido pelo beneficiado, a partir do id criado
 
 
 DELETE/beneficiado/:cpf = rota que deleta um beneficiado
