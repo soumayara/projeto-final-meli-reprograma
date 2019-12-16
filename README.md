@@ -10,26 +10,26 @@ onde algumas vezes por ano o beneficiado recebe um caderno referente a um livro 
 
 Área restrita - SBB Ação Social
 
-GET/beneficiado = listar todos os beneficiados cadastrados no Programa | HTTP 200 OK
+GET/beneficiado = listar todos os beneficiados cadastrados no Programa
 
-GET/beneficiado/cpf/:cpf = lista de acordo com o CPF, os beneficiados cadastrados no Programa | HTTP 200 OK
+GET/beneficiado/cpf/:cpf = lista de acordo com o CPF, os beneficiados cadastrados no Programa
 
-GET/beneficiado/nome/:nome = lista de acordo com o nome, os beneficiados cadastrados no Programa | HTTP 200 OK
+GET/beneficiado/nome/:nome = lista de acordo com o nome, os beneficiados cadastrados no Programa
 
-GET/beneficiado/:id = lista de acordo com o ID, os beneficiados cadastrados no Programa | HTTP 200 OK
-
-
-POST/beneficiado = insere os dados de um novo beneficiado | HTTP 200 OK
-
-POST/:cpf = insere um novo livro recebido ao beneficiado puxando pelo cpf cadastrado | HTTP 201 CREATED
+GET/beneficiado/:id = lista de acordo com o ID, os beneficiados cadastrados no Programa
 
 
-PUT/:_id = atualiza os dados de um beneficiado puxando pelo id criado | HTTP 200
+POST/beneficiado = insere os dados de um novo beneficiado
 
-PUT/livros/:_id = atualiza a lista de livros recebido pelo beneficiado, a partir do id criado | HTTP 200
+POST/:cpf = insere um novo livro recebido ao beneficiado puxando pelo cpf cadastrado
 
 
-DELETE/beneficiado/:cpf = rota que deleta um beneficiado | HTTP 200 NO CONTENT
+PUT/:_id = atualiza os dados de um beneficiado puxando pelo id criado
+
+PUT/livros/:_id = atualiza a lista de livros recebido pelo beneficiado, a partir do id criado
+
+
+DELETE/beneficiado/:cpf = rota que deleta um beneficiado
 
 <h3>Linguagens Utilizadas</h3>
 • JavaScript |
