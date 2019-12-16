@@ -10,16 +10,16 @@ onde algumas vezes por ano o beneficiado recebe um caderno referente a um livro 
 
 Área restrita - SBB Ação Social
 
-GET /beneficiado = listar todos os beneficiados cadastrados no Programa | HTTP 200 OK
+GET/beneficiado = listar todos os beneficiados cadastrados no Programa | HTTP 200 OK
 
-GET /beneficiado/cpf/:cpf = lista de acordo com o CPF, os beneficiados cadastrados no Programa | HTTP 200 OK
+GET/beneficiado/cpf/:cpf = lista de acordo com o CPF, os beneficiados cadastrados no Programa | HTTP 200 OK
 
-GET /beneficiado/nome/:nome = lista de acordo com o nome, os beneficiados cadastrados no Programa | HTTP 200 OK
+GET/beneficiado/nome/:nome = lista de acordo com o nome, os beneficiados cadastrados no Programa | HTTP 200 OK
 
-GET /beneficiado/:id = lista de acordo com o ID, os beneficiados cadastrados no Programa | HTTP 200 OK
+GET/beneficiado/:id = lista de acordo com o ID, os beneficiados cadastrados no Programa | HTTP 200 OK
 
 
-POST /beneficiado = insere os dados de um novo beneficiado | HTTP 200 OK
+POST/beneficiado = insere os dados de um novo beneficiado | HTTP 200 OK
 
 POST/:cpf = insere um novo livro recebido ao beneficiado puxando pelo cpf cadastrado | HTTP 201 CREATED
 
