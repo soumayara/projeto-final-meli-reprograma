@@ -45,6 +45,6 @@ DELETE/beneficiado/:cpf = rota que deleta um beneficiado
 • Express |
 • Nodemon |
 • Mongoose |
-• Body-parser |
+• Body-parser 
 
 <h3> Conheça o projeto na íntegra: </h3> http://bit.ly/ABibliaEmBraile
