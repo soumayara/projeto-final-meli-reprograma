@@ -18,7 +18,7 @@ GET/beneficiado/nome/:nome = lista de acordo com o nome, os beneficiados cadastr
 GET/beneficiado/:id = lista de acordo com o ID, os beneficiados cadastrados no Programa
 
 
-//<em><b>Área restrita - SBB Ação Social</em></b>
+//<em><b>Área restrita - Ação Social</em></b>
 
 
 POST/beneficiado = insere os dados de um novo beneficiado
