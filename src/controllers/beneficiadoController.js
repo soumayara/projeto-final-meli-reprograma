@@ -72,16 +72,16 @@ exports.postBeneficiado = (req, res) => {
 
 
 exports.postBooks = (req, res) => {
-    const beneficiadoId = req.params.id
-    Beneficiado.findById(beneficiadoId, function (err, beneficiado) {
+    const beneficiadoId = req.params_id
+    Beneficiado.findById(beneficiadoId, function (err, beneficiados) {
         if (err)
             return res.status(500).send(err)
 
-        if (!beneficiado) {
-            return res.status(200).send({ message: `infelizmente a aluna não foi encontrada` })
+        if (!beneficiados) {
+            return res.status(200).send({ message: `Livro incluído com sucesso` })
         }
         const livro = req.body
-            (recebido.titulo).push(livro)
+            (recebido).push(livro)
         Beneficiado.save(function (err) {
             if (err)
                 return res.status(500).send(err)
@@ -98,7 +98,7 @@ exports.putById = (req,res) => {
       {upsert:false},
     function (err) {
        if (err) return res.status(500).send({message: 'err'})
-       res.status(200).send({message: "Atualizado com sucesso"})
+       res.status(200).send({message: "Beneficiado atualizado com sucesso"})
     })
   }
 

@@ -14,6 +14,8 @@ db.once("open", function (){
   console.log("conexão feita com sucesso")
 })
 
+//mongoose.connect("mongodb://localhost:27017/Beneficiados", {useUnifiedTopology:true, useNewUrlParser:true})
+
 
 //rotas
 const index = require("./routes/index")

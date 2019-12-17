@@ -9,7 +9,7 @@ router.get("/", controller.get)
 /**
  * @api {get} /beneficiado/ Listar todos beneficiados cadastrados
  * @apiName Get
- * @apiGroup Beneficiados
+ * @apiGroup Beneficiado
  *
  * @apiSuccessExample Success-Response:
  *     HTTP/1.1 200 OK
@@ -41,7 +41,7 @@ router.get("/:id", controller.getById)
 /**
  * @api {get} /beneficiado/:id Listar os beneficiados cadastrados por ID
  * @apiName Get
- * @apiGroup Beneficiados
+ * @apiGroup Beneficiado
  *
  * @apiSuccessExample Success-Response:
  *     HTTP/1.1 200 OK
@@ -73,7 +73,7 @@ router.get("/cpf/:cpf", controller.getByCpf)
 /**
  * @api {get} /beneficiado/cpf/:cpf Listar todos beneficiados cadastrados puxando por CPF
  * @apiName Get
- * @apiGroup Beneficiados
+ * @apiGroup Beneficiado
  *
  * @apiSuccessExample Success-Response:
  *     HTTP/1.1 200 OK
@@ -105,7 +105,7 @@ router.get("/nome/:nome", controller.getByNome)
 /**
  * @api {get} /beneficiado/nome/:nome Listar todos beneficiados cadastrados puxando por nome
  * @apiName Get
- * @apiGroup Beneficiados
+ * @apiGroup Beneficiado
  *
  * @apiSuccessExample Success-Response:
  *     HTTP/1.1 200 OK
@@ -137,7 +137,7 @@ router.post("/", controller.postBeneficiado)
 /**
  * @api {post} /beneficiado/ Cadastro de beneficiados
  * @apiName Post
- * @apiGroup Criar Beneficiado
+ * @apiGroup Beneficiado
  * 
  * @apiParam (Request Body) {String} nome Nome do Beneficiado
  * @apiParam (Request Body) {String} email Email do Beneficiado
@@ -165,12 +165,12 @@ router.post("/", controller.postBeneficiado)
     }
  */
 
-router.post("/:cpf", controller.postBooks)
+router.post("/livro/:_id", controller.postBooks)
 
 /**
  * @api {post} /beneficiado/ Cadastro de livros recebidos
  * @apiName Post
- * @apiGroup Atualizar Livros
+ * @apiGroup Livros
  * 
  * @apiParam (Request Body) {String} livrosRecebidos livros recebidos pelo beneficiado
  * @apiParam (Request Body) {String} titulo Título dos livros recebidos pelo beneficiado
@@ -198,7 +198,7 @@ router.put("/:_id", controller.putById)
  * @apiSuccessExample Success-Response:
  *     HTTP/1.1 200 OK
  *  {
- *       "mensagem": "Participante atualizado"
+ *       "mensagem": "Atualizado com sucesso"
  *   }
  *
  * @apiError Error Beneficiado não localizado.
@@ -212,6 +212,31 @@ router.put("/:_id", controller.putById)
  */
 
 router.put("/livros/:_id", controller.putLivro)
+
+/**
+ * @api {put} /beneficiado/livros/:_id Atualiza o livro recebido pelo beneficiado
+ * @apiName Put
+ * @apiGroup Livros
+ * 
+ * @apiParam {String} livrosId Id do Beneficiado em que será atualizado o livro
+ * 
+ *
+ * @apiSuccessExample Success-Response:
+ *     HTTP/1.1 200 OK
+ *  {
+ *       "mensagem": "Atualizado com sucesso"
+ *   }
+ *
+ * @apiError Error Beneficiado não localizado.
+ * 
+ * @apiErrorExample Error-Response:
+ * 
+ * HTTP/1.1 404 OK
+ *  {
+ *      "mensagem": "Error"
+ *  }
+ */
+
 router.delete("/:id", controller.deleteBeneficiado)
 
 /**
@@ -225,7 +250,7 @@ router.delete("/:id", controller.deleteBeneficiado)
  * @apiSuccessExample Success-Response:
  *     HTTP/1.1 200 OK
  *  {
- *       "mensagem": "Participante removido com sucesso"
+ *       "mensagem": "Beneficiado removido com sucesso"
  *   }
  *
  * @apiError Error Beneficiado não localizado.
